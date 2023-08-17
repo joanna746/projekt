@@ -1,0 +1,402 @@
+nav {
+  background-color: white;
+}
+nav .container-fluid {
+  width: 1262px;
+  margin: 0 auto;
+  max-height: 72px;
+}
+nav .container-fluid .logo-firmy {
+  font-size: 1.5vw;
+}
+nav .container-fluid .nav-item {
+  font-size: 1vw;
+  font-family: "Inter";
+}
+nav .container-fluid .mr-2 {
+  font-weight: bold;
+}
+nav .container-fluid .navbar-collapse {
+  justify-content: end;
+}
+
+@media (min-width: 1600px) {
+  nav .container-fluid {
+    width: 100%;
+    max-width: 1920px;
+  }
+}
+.custom-container {
+  margin-top: 0px !important;
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+.custom-container .custom-col {
+  width: 52.2222222222%;
+}
+.custom-container .custom-row {
+  flex: 1;
+}
+.custom-container .custom-row .sticky-right {
+  padding: 0px;
+  width: 47.7777777778%;
+}
+.custom-container .custom-row .sticky-right .carousel-control-prev-icon {
+  display: none;
+}
+.custom-container .custom-row .sticky-right .carousel-control-next {
+  display: none;
+}
+.custom-container .custom-row .custom-col {
+  padding: 0px;
+}
+.custom-container .custom-row .custom-col .card {
+  background-color: rgb(229, 201, 179);
+  height: 100%;
+  border: none;
+}
+.custom-container .custom-row .custom-col .card .card-body {
+  max-width: 599px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+.custom-container .custom-row .custom-col .card .card-body .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  line-height: 5vw;
+}
+.custom-container .custom-row .custom-col .card .card-body .text-container .text-item {
+  font-size: 4vw;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+.custom-container .custom-row .custom-col .card .card-body p {
+  font-size: 1.3vw;
+  margin-top: 44px;
+  margin-right: 124px;
+  margin-bottom: 0px;
+  line-height: 1.5em;
+  font-family: "Inter";
+}
+.custom-container .custom-row .custom-col .card .card-body .buttons {
+  margin-top: 72px;
+  margin-right: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+.custom-container .custom-row .custom-col .card .card-body .buttons .btn-primary {
+  font-size: 1vw;
+  border-radius: 200px;
+  max-width: 210px;
+  width: 100%;
+  margin-right: 36px;
+  background-color: #1b5b31;
+  border-color: #1b5b31;
+  font-family: "Inter";
+}
+.custom-container .custom-row .custom-col .card .card-body .buttons .btn-secondary {
+  font-size: 1vw;
+  border-radius: 200px;
+  max-width: 249px;
+  width: 100%;
+  color: #1b5b31;
+  background-color: transparent;
+  font-family: "Inter";
+}
+.custom-container .custom-row .carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-ofert {
+  margin: 120px 0px 160px 0px;
+}
+
+.oferta {
+  background-color: #f5f0ec;
+}
+.oferta .ofert-komplex {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.oferta .ofert-komplex .ofert-all {
+  max-width: 655px;
+  padding-top: 12%;
+  padding-bottom: 4%;
+}
+.oferta .ofert-komplex h1 {
+  font-size: 3vw;
+  font-family: "Inter";
+  font-weight: medium;
+  font-style: italic;
+  margin-bottom: 32px;
+}
+.oferta .ofert-komplex h1 span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: medium;
+}
+.oferta .ofert-komplex p {
+  font-size: 1vw;
+  line-height: 150%;
+  font-family: "Inter";
+}
+@media (max-width: 767px) {
+  .oferta .ofert-komplex {
+    padding-left: 20px;
+    padding-top: 60px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.oferta .box-information {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 64px 64px;
+  padding: 0 88px;
+  padding-bottom: 160px;
+}
+.oferta .box-information .tiles {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr;
+  width: 100%;
+  padding: 48px 40px;
+  background-color: white;
+  border-radius: 28px;
+}
+.oferta .box-information .tiles .icon {
+  text-align: start;
+  margin-bottom: 32px;
+}
+.oferta .box-information .tiles .icon img {
+  max-width: 100%;
+  height: auto;
+}
+.oferta .box-information .tiles .title {
+  display: flex;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  font-family: "Montserrat";
+}
+.oferta .box-information .tiles .description {
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 48px;
+  text-align: start;
+  font-family: "Inter";
+}
+.oferta .box-information .tiles .information {
+  text-align: start;
+  font-family: "Inter";
+  color: #1b5b31;
+}
+@media (max-width: 1000px) {
+  .oferta .box-information {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+    padding-bottom: 40px;
+  }
+}
+
+.o-firmie .foto {
+  padding: 0;
+}
+.o-firmie .foto img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.o-firmie .description-company {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1D6135;
+  color: white;
+  padding-left: 64px;
+}
+.o-firmie .description-company .information-company {
+  max-width: 596px;
+  padding-left: 9%;
+}
+.o-firmie .description-company .information-company .breadcrumbs-company {
+  font-family: "Inter";
+  font-size: 16px;
+}
+.o-firmie .description-company .information-company h2 {
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-weight: medium;
+  margin-bottom: 40px;
+}
+.o-firmie .description-company .information-company h2 .pasja {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 500;
+}
+.o-firmie .description-company .information-company p {
+  font-family: "Inter";
+  font-size: 16px;
+  margin-bottom: 72px;
+  line-height: 150%;
+}
+.o-firmie .description-company .information-company .button-ofirmie {
+  border: 1px solid white;
+  border-radius: 200px;
+  width: 194px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information-about {
+  background-color: #1D6135;
+  margin: 60px auto;
+  max-width: 1040px;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-us {
+  justify-content: center;
+  align-items: center;
+  padding: 120px 110px;
+  letter-spacing: -2px;
+  text-align: left;
+}
+
+.instagram .contakt {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 120%;
+}
+
+.contakt-inst {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 120%;
+}
+.contakt-inst span {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: italic;
+}
+
+.realization .media {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 150%;
+}
+.realization .media .media-inf {
+  white-space: nowrap;
+}
+.realization .my-insta {
+  color: #1D6135;
+  font-family: "Montserrat";
+  font-size: 16px;
+  letter-spacing: -1px;
+  border: 1px solid white;
+  max-width: 124px;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+footer {
+  background-color: black;
+  margin: 0 auto;
+}
+footer .footer {
+  color: white;
+  height: 100%;
+}
+footer .footer .footer-divider {
+  background: linear-gradient(to right, white 50%, white 50%);
+  height: 1px;
+  position: absolute;
+  top: 37%;
+  max-width: 1030px;
+  width: 100%;
+}
+footer .footer .logo {
+  height: 100%;
+  position: relative;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-top: 80px;
+  margin-bottom: 120px;
+  height: 100%;
+}
+footer .footer .logo .kontener-pierwszy {
+  align-items: stretch;
+  display: inline-grid;
+}
+footer .footer .logo .kontener-pierwszy .zawartosc-pierwsza {
+  display: flex;
+  align-content: flex-end;
+}
+footer .footer .logo .kontener-pierwszy .element-one {
+  padding-top: 15px;
+  font-family: "Montserrat";
+}
+footer .footer .logo .kontener-pierwszy .element-two, footer .footer .logo .kontener-pierwszy .element-three, footer .footer .logo .kontener-pierwszy .element-four, footer .footer .logo .kontener-pierwszy .element-five {
+  font-family: "Inter";
+}
+footer .footer .logo .kontakt-dofirmy {
+  align-items: stretch;
+  display: inline-grid;
+  text-align: end;
+}
+footer .footer .logo .kontakt-dofirmy .elem-6 .element-six {
+  white-space: nowrap;
+  font-family: "Inter";
+  height: 195px;
+  padding-top: 15px;
+}
+footer .footer .logo .kontakt-dofirmy .element-seven {
+  background-color: green;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+footer .footer .logo .kontakt-dofirmy .element-eight, footer .footer .logo .kontakt-dofirmy .element-nine {
+  font-family: "Inter";
+}
+footer .footer .logo .kontakt-dofirmy .zawartosc-pierwsza {
+  display: flex;
+  align-content: flex-end;
+}
+footer .footer .logo .stopka {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+footer .footer .logo .stopka .prawa-zasrzezone {
+  font-family: "Inter";
+}
+footer .footer .logo .stopka .made-by {
+  text-align: end;
+  font-family: "Inter";
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHQTtFQUNJLHVCQUFBO0FDRko7QURJSTtFQUNJLGFBQUE7RUFDQSxjQUFBO0VBQ0EsZ0JBQUE7QUNGUjtBREdRO0VBQ0ksZ0JBQUE7QUNEWjtBREdRO0VBQ0ksY0FBQTtFQUNBLG9CQWRHO0FDYWY7QURHUTtFQUNJLGlCQUFBO0FDRFo7QURJUTtFQUNJLG9CQUFBO0FDRlo7O0FETUE7RUFDQztJQUNHLFdBQUE7SUFDQSxpQkFBQTtFQ0hGO0FBQ0Y7QURNQTtFQUNJLDBCQUFBO0VBQ0EsYUFBQTtFQUNBLG9CQUFBO0VBQ0EsWUFBQTtBQ0pKO0FES0k7RUFDSSxxQkFBQTtBQ0hSO0FES0k7RUFDSSxPQUFBO0FDSFI7QURLUTtFQUNJLFlBQUE7RUFDQSxxQkFBQTtBQ0haO0FESVk7RUFDSSxhQUFBO0FDRmhCO0FESVk7RUFDSSxhQUFBO0FDRmhCO0FETVE7RUFDSSxZQUFBO0FDSlo7QURNWTtFQUNJLG9DQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7QUNKaEI7QURNZ0I7RUFDSSxnQkFBQTtFQUNBLGFBQUE7RUFDQSxzQkFBQTtFQUNBLHVCQUFBO0VBQ0EsY0FBQTtBQ0pwQjtBRE1vQjtFQUNJLGFBQUE7RUFDQSxzQkFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxnQkFBQTtBQ0p4QjtBRFF3QjtFQUNJLGNBQUE7RUFDQSxnQkFBQTtFQUNBLHlCQWxGZDtBQzRFZDtBRFVvQjtFQUNJLGdCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxtQkFBQTtFQUNBLGtCQUFBO0VBQ0Esa0JBQUE7RUFDQSxvQkEzRlQ7QUNtRmY7QURXb0I7RUFDSSxnQkFBQTtFQUNBLG1CQUFBO0VBQ0EsYUFBQTtFQUNBLDhCQUFBO0FDVHhCO0FEV3dCO0VBQ0ksY0FBQTtFQUNBLG9CQUFBO0VBQ0EsZ0JBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7RUFDQSx5QkFBQTtFQUNBLHFCQUFBO0VB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 */

@@ -1,0 +1,449 @@
+$font-family: 'Montserrat';
+$font-family2: 'Inter';
+
+nav {
+    background-color: white;
+
+    .container-fluid {
+        width:1262px;
+        margin:0 auto;
+        max-height: 72px;
+        .logo-firmy{
+            font-size:1.5vw;
+        }
+        .nav-item{
+            font-size:1vw;
+            font-family: $font-family2;
+        }
+        .mr-2 {
+            font-weight: bold;
+        }
+
+        .navbar-collapse {
+            justify-content: end;
+        }
+    }
+}
+@media(min-width: 1600px) {
+ nav .container-fluid {
+    width: 100%;
+    max-width: 1920px;
+    
+  }
+}
+.custom-container {
+    margin-top: 0px !important;
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    .custom-col{
+        width: calc((752 / 1440) * 100%);  
+    }
+    .custom-row {
+        flex: 1;
+
+        .sticky-right {
+            padding: 0px;
+            width: calc((688 / 1440) * 100%);
+            .carousel-control-prev-icon{
+                display:none;
+            }
+            .carousel-control-next{
+                display:none;
+            }
+        }
+
+        .custom-col {
+            padding: 0px;
+
+            .card {
+                background-color: rgba(229, 201, 179, 1);
+                height: 100%;
+                border: none;
+
+                .card-body {
+                    max-width: 599px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 0 auto;
+
+                    .text-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        text-align: start;
+                        line-height: 5vw;
+                       
+                        
+
+                        .text-item {
+                            font-size: 4vw;
+                            font-weight: 500;
+                            font-family: $font-family;
+                        }
+                    }
+
+                    p {
+                        font-size: 1.3vw;
+                        margin-top: 44px;
+                        margin-right: 124px;
+                        margin-bottom: 0px;
+                        line-height: 1.5em;
+                        font-family:$font-family2;
+                    }
+
+                    .buttons {
+                        margin-top: 72px;
+                        margin-right: 110px;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .btn-primary {
+                            font-size: 1vw;
+                            border-radius: 200px;
+                            max-width: 210px;
+                            width: 100%;
+                            margin-right: 36px;
+                            background-color: #1b5b31;
+                            border-color: #1b5b31;
+                            font-family:$font-family2;
+                        }
+
+                        .btn-secondary {
+                            font-size: 1vw;
+                            border-radius: 200px;
+                            max-width: 249px;
+                            width: 100%;
+                            color: #1b5b31;
+                            background-color: transparent;
+                            font-family:$font-family2;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+      
+    }
+}
+
+.section-ofert {
+    margin: 120px 0px 160px 0px;
+}
+
+.oferta {
+    background-color: #f5f0ec;
+
+    .ofert-komplex {
+        max-width:1040px;
+        margin:0 auto;
+        .ofert-all{
+            max-width: 655px;
+            padding-top: 12%;
+            padding-bottom: 4%;
+        }
+
+        h1 {
+            font-size: 3vw;
+            font-family: $font-family2;
+            font-weight: medium;
+            font-style: italic;
+            margin-bottom:32px;
+            span{
+                font-family: $font-family;
+                font-style: normal;
+                font-weight: medium;
+            }
+        }
+
+        p {
+            font-size: 1vw;
+            line-height: 150%;
+            font-family: $font-family2;
+           
+        }
+
+    }
+
+    @media (max-width: 767px) {
+        .ofert-komplex {
+            padding-left: 20px;
+            padding-top: 60px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .box-information {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 64px 64px;
+        padding: 0 88px;
+        padding-bottom: 160px;
+
+        .tiles {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 4fr;
+            width: 100%;
+            padding: 48px 40px;
+            background-color: white;
+            border-radius: 28px;
+
+            .icon {
+                text-align: start;
+                margin-bottom: 32px;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            .title {
+                display: flex;
+                font-size: 28px;
+                font-weight: 500;
+                margin-bottom: 16px;
+                font-family: $font-family;
+            }
+
+            .description {
+                font-size: 15px;
+                font-weight: normal;
+                margin-bottom: 48px;
+                text-align: start;
+                font-family: $font-family2;
+            }
+
+            .information {
+                text-align: start;
+                font-family: $font-family2;
+                color:#1b5b31;
+            }
+
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .box-information {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 0 20px;
+            padding-bottom: 40px;
+        }
+    }
+}
+
+.o-firmie {
+    .foto {
+        padding: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+    }
+
+    .description-company {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #1D6135;
+        color: white;
+        padding-left:64px;
+        .information-company{
+            max-width: 596px;
+            padding-left: 9%;
+            .breadcrumbs-company{
+                font-family: $font-family2;
+                font-size:16px;
+            }
+            h2{
+                font-family: $font-family;
+                font-size:48px;
+                font-weight:medium;
+                margin-bottom:40px;
+                .pasja{
+                    font-family: $font-family2;
+                    font-style: italic;
+                    font-weight: 500;
+                }
+            }
+            p{
+                font-family:$font-family2;
+                font-size: 16px;
+                margin-bottom: 72px;
+                line-height: 150%;
+            }
+            .button-ofirmie{
+                border: 1px solid white;
+                border-radius: 200px;
+                width: 194px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+.information-about {
+    background-color: #1D6135;
+    margin: 60px auto;
+    max-width: 1040px;
+    text-align: center;
+    padding: 20px;
+  }
+  .about-us {
+    justify-content: center;
+    align-items: center;
+    padding: 120px 110px;
+    letter-spacing: -2px;
+    text-align: left;
+  }
+  .instagram{
+   
+    .contakt {
+        color: white;
+        font-family: $font-family;
+        font-size: 40px;
+        font-weight:200;
+        line-height: 120%;
+        
+    }
+  }
+  
+.contakt-inst{
+    color: white;
+    font-family: $font-family;
+    font-size: 40px;
+    font-weight:200;
+    line-height: 120%;
+    
+    span{
+        font-family: $font-family2;
+        font-weight: 500;
+        font-style: italic;
+    }
+}
+  
+  .realization{
+    .media{
+        color: white;
+        font-family: $font-family;  
+        font-size:16px;
+        letter-spacing:-1px;
+        line-height: 150%;
+        .media-inf{
+            white-space: nowrap;
+        }
+    }
+    .my-insta{
+        color: #1D6135;
+        font-family: $font-family;  
+        font-size:16px;
+        letter-spacing:-1px;
+        border:1px solid white;
+        max-width: 124px;
+        border-radius:200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+ }
+ footer{
+    background-color: black;
+    margin:0 auto;
+    .footer{
+        
+        color:white;
+        height:100%;
+        .footer-divider {
+            background: linear-gradient(to right, white 50%, white 50%);
+            height: 1px;
+            position: absolute;
+            top: 37%;
+            max-width: 1030px;
+            width: 100%;
+          }
+        .logo{
+            height:100%;
+            position: relative;
+            max-width: 1040px;
+            margin: 0 auto;
+            padding-top: 80px;
+            margin-bottom: 120px;
+            height: 100%;
+            .kontener-pierwszy{
+                align-items: stretch;
+                display: inline-grid;
+                .zawartosc-pierwsza{
+                    display: flex;
+                    align-content: flex-end;
+                   
+                }
+                .element-one{
+                    padding-top: 15px;
+                    font-family:$font-family;
+
+                }
+                .element-two, .element-three, .element-four, .element-five{
+                    font-family: $font-family2;
+                }
+            }
+            .kontakt-dofirmy{
+                align-items: stretch;
+                display: inline-grid;
+                text-align: end;
+                .elem-6{
+                    .element-six {
+                        white-space: nowrap;
+                        font-family: $font-family2;
+                        height: 195px;
+                        padding-top: 15px;
+                    }
+                }
+                .element-seven{
+                    background-color: green;
+                    border-radius: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height:50px;
+
+                }
+                .element-eight, .element-nine{
+                    font-family: $font-family2;
+                }
+               
+                .zawartosc-pierwsza{
+                    display: flex;
+                    align-content: flex-end;
+                    
+                }
+            }
+            .stopka{
+                padding-top:120px;
+                padding-bottom:80px;
+                .prawa-zasrzezone{
+                font-family:$font-family2;
+                }
+                .made-by{
+                text-align: end;
+                font-family:$font-family2;
+                }
+            }
+        }
+    }
+}
