@@ -1,20 +1,26 @@
 $font-family: 'Montserrat';
 $font-family2: 'Inter';
 
-nav {
+.navbar-expand-lg {
     background-color: white;
+    padding: 0px;
 
     .container-fluid {
-        width:1262px;
-        margin:0 auto;
-        max-height: 72px;
-        .logo-firmy{
-            font-size:1.5vw;
+        width: 1262px;
+        margin: 0 auto;
+        height: 72px;
+        padding: 0px;
+
+        .logo-firmy {
+            font-size: 1.5vw;
         }
-        .nav-item{
-            font-size:1vw;
+
+        .nav-item {
+            font-size: 1vw;
             font-family: $font-family2;
+            color:#111;
         }
+
         .mr-2 {
             font-weight: bold;
         }
@@ -22,34 +28,65 @@ nav {
         .navbar-collapse {
             justify-content: end;
         }
+
+    }
+
+    .list-nav {
+        max-width: 447px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      
+       
+        .ofert-button{
+            background-color: white;
+            color:#111;
+            border: none;
+            font-size: 1vw;
+            font-family: $font-family2;
+        }
+        
     }
 }
+
 @media(min-width: 1600px) {
- nav .container-fluid {
-    width: 100%;
-    max-width: 1920px;
-    
-  }
+    nav .container-fluid {
+        width: 100%;
+        max-width: 1920px;
+
+    }
 }
+
+.search-content {
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
 .custom-container {
     margin-top: 0px !important;
+    padding-right: 0px;
     display: flex;
     align-items: stretch;
     height: 100%;
-    .custom-col{
-        width: calc((752 / 1440) * 100%);  
-    }
+
     .custom-row {
         flex: 1;
 
         .sticky-right {
             padding: 0px;
-            width: calc((688 / 1440) * 100%);
-            .carousel-control-prev-icon{
-                display:none;
+
+            // width: calc((688 / 1440) * 100%);
+            .carousel-item {
+                height: 100%;
+                width: 100%;
             }
-            .carousel-control-next{
-                display:none;
+
+            .carousel-control-prev-icon {
+                display: none;
+            }
+
+            .carousel-control-next {
+                display: none;
             }
         }
 
@@ -67,15 +104,16 @@ nav {
                     flex-direction: column;
                     justify-content: center;
                     margin: 0 auto;
+                    padding: 0px;
 
                     .text-container {
                         display: flex;
                         flex-direction: column;
                         align-items: start;
                         text-align: start;
-                        line-height: 5vw;
-                       
-                        
+                        line-height: 4.9vw;
+
+
 
                         .text-item {
                             font-size: 4vw;
@@ -85,12 +123,11 @@ nav {
                     }
 
                     p {
-                        font-size: 1.3vw;
+                        font-size: 1.2vw;
                         margin-top: 44px;
                         margin-right: 124px;
                         margin-bottom: 0px;
-                        line-height: 1.5em;
-                        font-family:$font-family2;
+                        font-family: $font-family2;
                     }
 
                     .buttons {
@@ -101,23 +138,25 @@ nav {
 
                         .btn-primary {
                             font-size: 1vw;
+                            height: 50px;
                             border-radius: 200px;
                             max-width: 210px;
                             width: 100%;
                             margin-right: 36px;
                             background-color: #1b5b31;
                             border-color: #1b5b31;
-                            font-family:$font-family2;
+                            font-family: $font-family2;
                         }
 
                         .btn-secondary {
                             font-size: 1vw;
+                            height: 50px;
                             border-radius: 200px;
                             max-width: 249px;
                             width: 100%;
                             color: #1b5b31;
                             background-color: transparent;
-                            font-family:$font-family2;
+                            font-family: $font-family2;
                         }
                     }
                 }
@@ -130,7 +169,8 @@ nav {
             height: 100%;
             object-fit: cover;
         }
-      
+
+
     }
 }
 
@@ -140,11 +180,13 @@ nav {
 
 .oferta {
     background-color: #f5f0ec;
+    padding: 0px;
 
     .ofert-komplex {
-        max-width:1040px;
-        margin:0 auto;
-        .ofert-all{
+        max-width: 1040px;
+        margin: 0 auto;
+
+        .ofert-all {
             max-width: 655px;
             padding-top: 12%;
             padding-bottom: 4%;
@@ -155,8 +197,9 @@ nav {
             font-family: $font-family2;
             font-weight: medium;
             font-style: italic;
-            margin-bottom:32px;
-            span{
+            margin-bottom: 32px;
+
+            span {
                 font-family: $font-family;
                 font-style: normal;
                 font-weight: medium;
@@ -167,7 +210,7 @@ nav {
             font-size: 1vw;
             line-height: 150%;
             font-family: $font-family2;
-           
+
         }
 
     }
@@ -216,7 +259,7 @@ nav {
             }
 
             .description {
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: normal;
                 margin-bottom: 48px;
                 text-align: start;
@@ -226,7 +269,7 @@ nav {
             .information {
                 text-align: start;
                 font-family: $font-family2;
-                color:#1b5b31;
+                color: #1b5b31;
             }
 
         }
@@ -260,32 +303,38 @@ nav {
         justify-content: center;
         background-color: #1D6135;
         color: white;
-        padding-left:64px;
-        .information-company{
+        padding-left: 64px;
+
+        .information-company {
             max-width: 596px;
             padding-left: 9%;
-            .breadcrumbs-company{
+
+            .breadcrumbs-company {
                 font-family: $font-family2;
-                font-size:16px;
+                font-size: 16px;
             }
-            h2{
+
+            h2 {
                 font-family: $font-family;
-                font-size:48px;
-                font-weight:medium;
-                margin-bottom:40px;
-                .pasja{
+                font-size: 48px;
+                font-weight: medium;
+                margin-bottom: 40px;
+
+                .pasja {
                     font-family: $font-family2;
                     font-style: italic;
                     font-weight: 500;
                 }
             }
-            p{
-                font-family:$font-family2;
+
+            p {
+                font-family: $font-family2;
                 font-size: 16px;
                 margin-bottom: 72px;
                 line-height: 150%;
             }
-            .button-ofirmie{
+
+            .button-ofirmie {
                 border: 1px solid white;
                 border-radius: 200px;
                 width: 194px;
@@ -297,78 +346,86 @@ nav {
         }
     }
 }
+
 .information-about {
     background-color: #1D6135;
     margin: 60px auto;
     max-width: 1040px;
     text-align: center;
     padding: 20px;
-  }
-  .about-us {
+}
+
+.about-us {
     justify-content: center;
     align-items: center;
     padding: 120px 110px;
     letter-spacing: -2px;
     text-align: left;
-  }
-  .instagram{
-   
+}
+
+.instagram {
+
     .contakt {
         color: white;
         font-family: $font-family;
         font-size: 40px;
-        font-weight:200;
+        font-weight: 200;
         line-height: 120%;
-        
+
     }
-  }
-  
-.contakt-inst{
+}
+
+.contakt-inst {
     color: white;
     font-family: $font-family;
     font-size: 40px;
-    font-weight:200;
+    font-weight: 200;
     line-height: 120%;
-    
-    span{
+
+    span {
         font-family: $font-family2;
         font-weight: 500;
         font-style: italic;
     }
 }
-  
-  .realization{
-    .media{
+
+.realization {
+    .media {
         color: white;
-        font-family: $font-family;  
-        font-size:16px;
-        letter-spacing:-1px;
+        font-family: $font-family;
+        font-size: 16px;
+        letter-spacing: -1px;
         line-height: 150%;
-        .media-inf{
+
+        .media-inf {
             white-space: nowrap;
         }
     }
-    .my-insta{
+
+    .my-insta {
         color: #1D6135;
-        font-family: $font-family;  
-        font-size:16px;
-        letter-spacing:-1px;
-        border:1px solid white;
+        font-family: $font-family;
+        font-size: 16px;
+        letter-spacing: -1px;
+        border: 1px solid white;
         max-width: 124px;
-        border-radius:200px;
+        border-radius: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: white;
     }
- }
- footer{
+}
+
+footer {
     background-color: black;
-    margin:0 auto;
-    .footer{
-        
-        color:white;
-        height:100%;
+    margin: 0 auto;
+
+    .footer {
+
+        color: white;
+        height: 100%;
+
         .footer-divider {
             background: linear-gradient(to right, white 50%, white 50%);
             height: 1px;
@@ -376,73 +433,125 @@ nav {
             top: 37%;
             max-width: 1030px;
             width: 100%;
-          }
-        .logo{
-            height:100%;
+        }
+
+        .logo {
+            height: 100%;
             position: relative;
             max-width: 1040px;
             margin: 0 auto;
             padding-top: 80px;
             margin-bottom: 120px;
             height: 100%;
-            .kontener-pierwszy{
+
+            .kontener-pierwszy {
                 align-items: stretch;
                 display: inline-grid;
-                .zawartosc-pierwsza{
+
+                .zawartosc-pierwsza {
                     display: flex;
                     align-content: flex-end;
-                   
-                }
-                .element-one{
-                    padding-top: 15px;
-                    font-family:$font-family;
 
                 }
-                .element-two, .element-three, .element-four, .element-five{
+
+                .element-one {
+                    padding-top: 15px;
+                    font-family: $font-family;
+
+                }
+
+                .element-two,
+                .element-three,
+                .element-four,
+                .element-five {
                     font-family: $font-family2;
                 }
             }
-            .kontakt-dofirmy{
+
+            .kontakt-dofirmy {
                 align-items: stretch;
                 display: inline-grid;
                 text-align: end;
-                .elem-6{
+
+                .elem-6 {
                     .element-six {
                         white-space: nowrap;
                         font-family: $font-family2;
                         height: 195px;
                         padding-top: 15px;
+                        font-size: 1.1vw;
                     }
                 }
-                .element-seven{
+
+                .element-seven {
                     background-color: green;
                     border-radius: 200px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    height:50px;
+                    height: 50px;
+                    font-size: 1.2vw;
 
                 }
-                .element-eight, .element-nine{
+
+                .element-eight,
+                .element-nine {
                     font-family: $font-family2;
                 }
-               
-                .zawartosc-pierwsza{
+
+                .zawartosc-pierwsza {
                     display: flex;
                     align-content: flex-end;
-                    
+
                 }
             }
-            .stopka{
-                padding-top:120px;
-                padding-bottom:80px;
-                .prawa-zasrzezone{
-                font-family:$font-family2;
+
+            .stopka {
+                padding-top: 120px;
+                padding-bottom: 80px;
+
+                .prawa-zasrzezone {
+                    font-family: $font-family2;
                 }
-                .made-by{
-                text-align: end;
-                font-family:$font-family2;
+
+                .made-by {
+                    text-align: end;
+                    font-family: $font-family2;
                 }
+            }
+        }
+    }
+}
+
+.container-withfoto {
+    width: 100%;
+    margin: 50px auto;
+
+}
+
+.projects {
+    padding: 0px;
+    background-color: #dcc1ab;
+
+    .our-projekt {
+        
+        width: 100%;
+        padding-top: 120px;
+        padding-bottom: 96px;
+        padding-left: 160px;
+
+        .breadcrumbs-project {
+            font-size: 12px;
+            color: green;
+            font-family: $font-family2;
+        }
+        .title-projekt{
+            font-family: $font-family;
+            font-size: 48px;
+            span{
+                font-size: 48px;
+                font-family: $font-family2;
+                font-style: italic;
             }
         }
     }
